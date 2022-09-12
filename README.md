@@ -106,6 +106,8 @@ docker run -it onion/omega2-source /bin/bash
 
 **Not recommended for beginners**
 
+> Note that when using Ubuntu, 18.04 is required. Using a later version will not build.
+
 Procedure to setup the build system on a Ubuntu Linux System:
 
 1. Setup Linux environment by installing the required packages:
