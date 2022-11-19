@@ -236,6 +236,7 @@ Defining the changes in each build. *Note that if a number is missing, that buil
 *Nov 18, 2022*
 
 * Warp core update
+* No longer compiling python twisted package - fixing build issue
 
 
 #### b253
