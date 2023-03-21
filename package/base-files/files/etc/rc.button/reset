@@ -23,7 +23,10 @@ released)
 	elif [ "$SEEN" -ge 5 -a -n "$OVERLAY" ]
 	then
 		echo "FACTORY RESET" > /dev/console
-		jffs2reset -y && reboot &
+		# We just remove all related application data
+		rm -rf /streambed/data || true
+		# Old command - undesirable for us: jffs2reset -y && reboot &
+		reboot
 	fi
 ;;
 esac
